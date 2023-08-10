@@ -16,32 +16,41 @@ namespace MvcProjeKampi.Controllers
         // GET: Message
         MessageManager mm = new MessageManager(new EfMessageDal());
         MessageValidator messageValidator = new MessageValidator();
-        
-        public ActionResult Inbox()
+
+
+        [Authorize]
+        public ActionResult Inbox(string p)
         {
             var messagelist = mm.GetMessageListIInbox();
             return View(messagelist);
         }
-        public ActionResult Sendbox()
+
+        public ActionResult Sendbox(string p)
         {
             var messagelist = mm.GetMessageListSendbox();
             return View(messagelist);
         }
+
+
         public ActionResult GetIInBoxMessageDetails(int id)
         {
             var values = mm.GetByID(id);
             return View(values);
         }
+
         public ActionResult GetSendBoxMessageDetails(int id)
         {
             var values = mm.GetByID(id);
             return View(values);
         }
+
+
         [HttpGet]
         public ActionResult NewMessage()
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult NewMessage(Message p)
         {

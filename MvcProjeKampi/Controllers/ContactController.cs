@@ -11,9 +11,10 @@ namespace MvcProjeKampi.Controllers
 {
     public class ContactController : Controller
     {
-        // GET: Contact
         ContactManager cm = new ContactManager(new EfContactDal());
         ContactValidator cv = new ContactValidator();
+
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var contactvalues = cm.GetContactList();

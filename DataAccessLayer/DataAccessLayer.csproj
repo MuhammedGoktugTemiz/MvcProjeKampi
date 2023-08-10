@@ -74,65 +74,9 @@
     <Compile Include="EntityFramework\EfImageFileDal.cs" />
     <Compile Include="EntityFramework\EfMessageDal.cs" />
     <Compile Include="EntityFramework\EfWriterDal.cs" />
-    <Compile Include="Migrations\202307210733299_mig_writer_edit.cs" />
-    <Compile Include="Migrations\202307210733299_mig_writer_edit.designer.cs">
-      <DependentUpon>202307210733299_mig_writer_edit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307210827397_mig_writertitle_add.cs" />
-    <Compile Include="Migrations\202307210827397_mig_writertitle_add.designer.cs">
-      <DependentUpon>202307210827397_mig_writertitle_add.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307240920369_mig_imagelengthchance.cs" />
-    <Compile Include="Migrations\202307240920369_mig_imagelengthchance.designer.cs">
-      <DependentUpon>202307240920369_mig_imagelengthchance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307241214410_mi_WriterStatusAdded.cs" />
-    <Compile Include="Migrations\202307241214410_mi_WriterStatusAdded.designer.cs">
-      <DependentUpon>202307241214410_mi_WriterStatusAdded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307250920324_yeni_.cs" />
-    <Compile Include="Migrations\202307250920324_yeni_.designer.cs">
-      <DependentUpon>202307250920324_yeni_.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307251329053_mig_contentstatusadd.cs" />
-    <Compile Include="Migrations\202307251329053_mig_contentstatusadd.designer.cs">
-      <DependentUpon>202307251329053_mig_contentstatusadd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307251332228_migration_Content.cs" />
-    <Compile Include="Migrations\202307251332228_migration_Content.designer.cs">
-      <DependentUpon>202307251332228_migration_Content.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307251334019_mig_writerdüzeltildi.cs" />
-    <Compile Include="Migrations\202307251334019_mig_writerdüzeltildi.designer.cs">
-      <DependentUpon>202307251334019_mig_writerdüzeltildi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307251336433_mig_writerstatuseklendi.cs" />
-    <Compile Include="Migrations\202307251336433_mig_writerstatuseklendi.designer.cs">
-      <DependentUpon>202307251336433_mig_writerstatuseklendi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307251339201_mig_düzenleme.cs" />
-    <Compile Include="Migrations\202307251339201_mig_düzenleme.designer.cs">
-      <DependentUpon>202307251339201_mig_düzenleme.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307251341013_mig_vallahisondüzenleme.cs" />
-    <Compile Include="Migrations\202307251341013_mig_vallahisondüzenleme.designer.cs">
-      <DependentUpon>202307251341013_mig_vallahisondüzenleme.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307281203119_mig_add_message.cs" />
-    <Compile Include="Migrations\202307281203119_mig_add_message.designer.cs">
-      <DependentUpon>202307281203119_mig_add_message.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202308020806301_exit.cs" />
-    <Compile Include="Migrations\202308020806301_exit.designer.cs">
-      <DependentUpon>202308020806301_exit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202308021300044_mig_imagefileadded.cs" />
-    <Compile Include="Migrations\202308021300044_mig_imagefileadded.designer.cs">
-      <DependentUpon>202308021300044_mig_imagefileadded.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202308030842097_mig_adminadded.cs" />
-    <Compile Include="Migrations\202308030842097_mig_adminadded.designer.cs">
-      <DependentUpon>202308030842097_mig_adminadded.cs</DependentUpon>
+    <Compile Include="Migrations\202308071442306_mig_database_yenilendi.cs" />
+    <Compile Include="Migrations\202308071442306_mig_database_yenilendi.designer.cs">
+      <DependentUpon>202308071442306_mig_database_yenilendi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,50 +92,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202307210733299_mig_writer_edit.resx">
-      <DependentUpon>202307210733299_mig_writer_edit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307210827397_mig_writertitle_add.resx">
-      <DependentUpon>202307210827397_mig_writertitle_add.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307240920369_mig_imagelengthchance.resx">
-      <DependentUpon>202307240920369_mig_imagelengthchance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307241214410_mi_WriterStatusAdded.resx">
-      <DependentUpon>202307241214410_mi_WriterStatusAdded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307250920324_yeni_.resx">
-      <DependentUpon>202307250920324_yeni_.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307251329053_mig_contentstatusadd.resx">
-      <DependentUpon>202307251329053_mig_contentstatusadd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307251332228_migration_Content.resx">
-      <DependentUpon>202307251332228_migration_Content.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307251334019_mig_writerdüzeltildi.resx">
-      <DependentUpon>202307251334019_mig_writerdüzeltildi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307251336433_mig_writerstatuseklendi.resx">
-      <DependentUpon>202307251336433_mig_writerstatuseklendi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307251339201_mig_düzenleme.resx">
-      <DependentUpon>202307251339201_mig_düzenleme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307251341013_mig_vallahisondüzenleme.resx">
-      <DependentUpon>202307251341013_mig_vallahisondüzenleme.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307281203119_mig_add_message.resx">
-      <DependentUpon>202307281203119_mig_add_message.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308020806301_exit.resx">
-      <DependentUpon>202308020806301_exit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308021300044_mig_imagefileadded.resx">
-      <DependentUpon>202308021300044_mig_imagefileadded.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202308030842097_mig_adminadded.resx">
-      <DependentUpon>202308030842097_mig_adminadded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202308071442306_mig_database_yenilendi.resx">
+      <DependentUpon>202308071442306_mig_database_yenilendi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

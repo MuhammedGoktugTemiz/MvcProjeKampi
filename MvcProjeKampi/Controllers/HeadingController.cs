@@ -23,9 +23,9 @@ namespace MvcProjeKampi.Controllers
         [HttpGet]
         public ActionResult AddHeading()
         {
-            List<SelectListItem> valuecategory = (from x in cm.GetList() select new SelectListItem { Text=x.CategoryName,Value=x.CategoryID.ToString()}).ToList();
+            List<SelectListItem> valuecategory = (from x in cm.GetList() select new SelectListItem { Text = x.CategoryName, Value = x.CategoryID.ToString() }).ToList();
             ViewBag.vlc = valuecategory;
-            List<SelectListItem> valuewriter = (from x in wm.GetList() select new SelectListItem { Text = x.WriterName, Value = x.YazarID.ToString() }).ToList();
+            List<SelectListItem> valuewriter = (from x in wm.GetList() select new SelectListItem { Text = x.WriterName, Value = x.WriterID.ToString() }).ToList();
             ViewBag.vlw = valuewriter;
             return View();
         }
@@ -39,17 +39,12 @@ namespace MvcProjeKampi.Controllers
         [HttpGet]
         public ActionResult EditHeading(int id)
         {
-            List<SelectListItem> valuecategory = (from x in cm.GetList()
-                                                  select new SelectListItem
-                                                  {
-                                                      Text = x.CategoryName,
-                                                      Value = x.CategoryID.ToString()
-                                                  }).ToList();
+            List<SelectListItem> valuecategory = (from x in cm.GetList() select new SelectListItem { Text = x.CategoryName, Value = x.CategoryID.ToString() }).ToList();
             ViewBag.vlc = valuecategory;
             var HeadingValue = hm.GetByID(id);
             return View(HeadingValue);
         }
-        [HttpPost] 
+        [HttpPost]
         public ActionResult EditHeading(Heading p)
         {
             hm.HeadingUpdate(p);
@@ -58,9 +53,15 @@ namespace MvcProjeKampi.Controllers
         public ActionResult DeleteHeading(int id)
         {
             var HeadingValue = hm.GetByID(id);
-            HeadingValue.HeadingStatus = false;
             hm.HeadingDelete(HeadingValue);
             return RedirectToAction("Index");
         }
+        public ActionResult ActiveHeading(int id)
+        {
+            var HeadingValue = hm.GetByID(id);
+            hm.HeadingActive(HeadingValue);
+            return RedirectToAction("Index");
+        }
+
     }
 }

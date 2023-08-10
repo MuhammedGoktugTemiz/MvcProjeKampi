@@ -25,23 +25,26 @@ namespace BusinessLayer.Concrete
 
         public List<Message> GetListIInbox()
         {
-            return _messageDal.List(x => x.ReceiverMail == "admin@gmail.com");
-        }
-
-        public object GetMessageListIInbox()
-        {
-            return _messageDal.List(x => x.ReceiverMail == "admin@gmail.com");
-        }
-
-        public object GetMessageListSendbox()
-        {
-            return _messageDal.List(x => x.ReceiverMail == "admin@gmail.com");
+            return _messageDal.List(x => x.ReceiverMail == "ayseuzun@gmail.com");
         }
 
         public List<Message> GetListSendbox()
         {
-            return _messageDal.List(x => x.SenderMail == "admin@gmail.com");
+            return _messageDal.List(x => x.SenderMail == "ayseuzun@gmail.com");
         }
+
+        public object GetMessageListIInbox()
+        {
+            return _messageDal.List(x => x.ReceiverMail == "ayseuzun@gmail.com");
+        }
+
+        public object GetMessageListSendbox()
+        {
+            return _messageDal.List(x => x.SenderMail == "ayseuzun@gmail.com");
+        }
+
+
+     
 
         public void MessageAdd(Message message)
         {
