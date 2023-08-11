@@ -9,7 +9,8 @@ using System.Web;
 using System.Web.Mvc;
 using FluentValidation.Results;
 using BusinessLayer.ValidationRules;
-
+using PagedList;
+using PagedList.Mvc;
 
 namespace MvcProjeKampi.Controllers
 {
@@ -62,6 +63,12 @@ namespace MvcProjeKampi.Controllers
             var HeadingValue = hm.GetByID(id);
             hm.HeadingDelete(HeadingValue);
             return RedirectToAction("MyHeading");
+        }
+
+        public ActionResult AllHeading(int p = 1)
+        {
+            var headings = hm.GetList().ToPagedList(p, 4);
+            return View(headings);
         }
     }
 }

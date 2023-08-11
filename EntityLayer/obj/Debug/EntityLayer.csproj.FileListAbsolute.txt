@@ -21,3 +21,5 @@ C:\Users\goktu\source\repos\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.cspr
 C:\Users\goktu\source\repos\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\goktu\source\repos\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\goktu\source\repos\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\goktu\source\repos\MvcProjeKampi\EntityLayer\bin\Debug\AutoMapper.dll
+C:\Users\goktu\source\repos\MvcProjeKampi\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
