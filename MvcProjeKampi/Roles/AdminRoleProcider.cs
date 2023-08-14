@@ -40,8 +40,24 @@ namespace MvcProjeKampi.Roles
         {
             Context c = new Context();
             var x = c.Admins.FirstOrDefault(y => y.AdminUserName == username);
-            return new string[] { x.AdminRole };
+
+            if (x != null)
+            {
+                return new string[] { x.AdminRole };
+            }
+            else
+            {
+                // Belirli bir hata durumu veya varsayılan rol döndürme işlemi
+                return new string[] { "DefaultRole" }; // Varsayılan bir rol döndürdüğünüzü varsayalım.
+            }
         }
+
+        //public override string[] GetRolesForUser(string username)
+        //{
+        //    Context c = new Context();
+        //    var x = c.Admins.FirstOrDefault(y => y.AdminUserName == username);
+        //    return new string[] { x.AdminRole };
+        //}
 
         public override string[] GetUsersInRole(string roleName)
         {

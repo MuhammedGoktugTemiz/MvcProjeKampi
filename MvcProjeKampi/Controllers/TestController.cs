@@ -16,6 +16,11 @@ namespace MvcProjeKampi.Controllers
         public ActionResult Test() 
         {
             return View();
+        } 
+        public ActionResult Test3() 
+        {
+            return View();
         }
+
     }
 }

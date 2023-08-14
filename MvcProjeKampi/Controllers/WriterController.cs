@@ -28,7 +28,7 @@ namespace MvcProjeKampi.Controllers
         [HttpPost]
         public ActionResult AddWriter(Writer p)
         {
-            
+
             ValidationResult results = writervalidator.Validate(p);
             if (results.IsValid)
             {
@@ -48,7 +48,7 @@ namespace MvcProjeKampi.Controllers
         public ActionResult EditWriter(int id)
         {
             var writervalue = wm.GetByID(id);
-            return View(writervalue);        
+            return View(writervalue);
         }
         [HttpPost]
         public ActionResult EditWriter(Writer p)
