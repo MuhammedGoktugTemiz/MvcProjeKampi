@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IAboutDal:IRepository<About>
+    // Hakkında (About) nesnesi için veri erişim katmanı arayüzü.
+    // IAboutDal, IRepository arayüzünden türetilir ve About nesnesine özgü işlemleri içerebilir.
+    public interface IAboutDal : IRepository<About>
     {
 
     }

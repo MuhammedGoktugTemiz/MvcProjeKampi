@@ -15,13 +15,13 @@ namespace MvcProjeKampi.Controllers
     {
         CategoryMenager cm = new CategoryMenager(new EfCategoryDal());
 
-        
+
         public ActionResult Index()
         {
             var categoryvalues = cm.GetList();
             return View(categoryvalues);
         }
-     
+
         [HttpGet]
         public ActionResult AddCategory()
         {
@@ -46,7 +46,7 @@ namespace MvcProjeKampi.Controllers
             }
             return View();
         }
-        
+
         public ActionResult DeleteCategory(int id)
         {
             var categoryvalue = cm.GetByID(id);
